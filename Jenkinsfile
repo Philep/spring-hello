@@ -10,7 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         sh """
-          docker build . -t ${philep}/${img_name}:${img_tag}
+          docker build . -t philep/${img_name}:${img_tag}
         """
       }
     }
